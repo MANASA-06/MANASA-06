@@ -1,0 +1,23 @@
+
+class Solution:
+    #Back-end complete function Template for Python 3
+    
+    #Function to find the leaders in the array.
+    def leaders(self, A, N):
+        k=[]
+        #for i in range(N-2,0,-1):
+          # l=max(A[0:i])
+           #if(A[i]>=l):
+               #k.append(A[i])
+        #k.append(A[N-1])
+        n = []
+        inv = A[::-1]
+        start = 0
+        for i in inv :
+            if i >=start:
+                start =i
+                n.append(i)
+        return(n[::-1])
+        #return k
+        
+                
